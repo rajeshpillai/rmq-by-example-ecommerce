@@ -1,23 +1,35 @@
 # RabbitMQ E-Commerce Example (Node.js)
 
-##Overview
+## Overview
+This project demonstrates how to use **RabbitMQ** in an **e-commerce** scenario using **Node.js**. It simulates:
+- **Order Processing**
+- **Payment Handling**
+- **Inventory Management**
+- **Notifications**
+- **Dead Letter Queue (DLQ) for failed payments**
+- **Message Retries using Exponential Backoff**
 
-This project demonstrates how to use RabbitMQ in an e-commerce scenario using Node.js. It simulates:
+This implementation uses **Direct Exchanges**, **Queues**, and **Routing Keys** for message passing.
 
-- Order Processing
-- Payment Handling
-- Inventory Management
-- Notifications
-- Dead Letter Queue (DLQ) for failed payments
-- Message Retries using Exponential Backoff
+---
 
-This implementation uses Direct Exchanges, Queues, and Routing Keys for message passing.
+## **Features & Functionality**
+- **Asynchronous Order Processing**
+- **Payment Handling with Automatic Retries**
+- **Inventory Management System**
+- **Notification System**
+- **Dead Letter Queue (DLQ) for failed messages**
+- **Message Retries (Exponential Backoff)**
+- **RabbitMQ Dashboard for Monitoring**
 
-## Branches
+---
 
-- feat-simple → Basic implementation (order, payment, inventory, notifications, DLQ)
+## **Branches**
+- `feat-simple` → **Basic implementation** (order, payment, inventory, notifications, DLQ)
+- `feat-retries` → **Message retries** (retries failed payments before sending to DLQ)
 
-- feat-retries → Message retries (retries failed payments before sending to DLQ)
+---
+
 
 ## Setup & Installation
 
